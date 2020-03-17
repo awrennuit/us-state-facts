@@ -8,12 +8,20 @@
 }
 
 .state-container {
+  position: relative;
+  bottom: 0;
   display: inline-block;
-  border: 6px solid blue;
+  border: 6px solid #3C3B6E;
   margin: 10px;
   padding: 5px;
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.state-container:hover {
+  bottom: 5px;
+  box-shadow: 5px 5px 10px grey;
 }
 
 .state-flag {
