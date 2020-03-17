@@ -10,203 +10,203 @@ export class StatesMainComponent implements OnInit {
   states = [
     {
       name: "Alabama",
-      flag: "alabama-flag.jpg"
+      flag: "alabama-flag.png"
     },
     {
       name: "Alaska",
-      flag: "alaska-flag.jpg"
+      flag: "alaska-flag.png"
     },
     {
       name: "Arizona",
-      flag: "arizona-flag.jpg"
+      flag: "arizona-flag.png"
     },
     {
       name: "Arkansas",
-      flag: "Arkansas-flag.jpg"
+      flag: "arkansas-flag.png"
     },
     {
       name: "California",
-      flag: "california-flag.jpg"
+      flag: "california-flag.png"
     },
     {
       name: "Colorado",
-      flag: "Colorado-flag.jpg"
+      flag: "colorado-flag.png"
     },
     {
       name: "Connecticut",
-      flag: "connecticut-flag.jpg"
+      flag: "connecticut-flag.png"
     },
     {
       name: "Delaware",
-      flag: "delaware-flag.jpg"
+      flag: "delaware-flag.png"
     },
     {
       name: "Florida",
-      flag: "florida-flag.jpg"
+      flag: "florida-flag.png"
     },
     {
       name: "Georgia",
-      flag: "georgia-flag.jpg"
+      flag: "georgia-flag.png"
     },
     {
       name: "Hawaii",
-      flag: "hawaii-flag.jpg"
+      flag: "hawaii-flag.png"
     },
     {
       name: "Idaho",
-      flag: "idaho-flag.jpg"
+      flag: "idaho-flag.png"
     },
     {
       name: "Illinois",
-      flag: "illinois-flag.jpg"
+      flag: "illinois-flag.png"
     },
     {
       name: "Indiana",
-      flag: "indiana-flag.jpg"
+      flag: "indiana-flag.png"
     },
     {
       name: "Iowa",
-      flag: "iowa-flag.jpg"
+      flag: "iowa-flag.png"
     },
     {
       name: "Kansas",
-      flag: "kansas-flag.jpg"
+      flag: "kansas-flag.png"
     },
     {
       name: "Kentucky",
-      flag: "kentucky-flag.jpg"
+      flag: "kentucky-flag.png"
     },
     {
       name: "Louisiana",
-      flag: "louisiana-flag.jpg"
+      flag: "louisiana-flag.png"
     },
     {
       name: "Maine",
-      flag: "maine-flag.jpg"
+      flag: "maine-flag.png"
     },
     {
       name: "Maryland",
-      flag: "maryland-flag.jpg"
+      flag: "maryland-flag.png"
     },
     {
       name: "Massachusetts",
-      flag: "massachusetts-flag.jpg"
+      flag: "massachusetts-flag.png"
     },
     {
       name: "Michigan",
-      flag: "michigan-flag.jpg"
+      flag: "michigan-flag.png"
     },
     {
       name: "Minnesota",
-      flag: "minnesota-flag.jpg"
+      flag: "minnesota-flag.png"
     },
     {
       name: "Mississippi",
-      flag: "mississippi-flag.jpg"
+      flag: "mississippi-flag.png"
     },
     {
       name: "Missouri",
-      flag: "missouri-flag.jpg"
+      flag: "missouri-flag.png"
     },
     {
       name: "Montana",
-      flag: "montana-flag.jpg"
+      flag: "montana-flag.png"
     },
     {
       name: "Nebraska",
-      flag: "nebraska-flag.jpg"
+      flag: "nebraska-flag.png"
     },
     {
       name: "Nevada",
-      flag: "nevada-flag.jpg"
+      flag: "nevada-flag.png"
     },
     {
       name: "New Hampshire",
-      flag: "new-hampshire-flag.jpg"
+      flag: "new-hampshire-flag.png"
     },
     {
       name: "New Jersey",
-      flag: "new-jersey-flag.jpg"
+      flag: "new-jersey-flag.png"
     },
     {
       name: "New Mexico",
-      flag: "new-mexico-flag.jpg"
+      flag: "new-mexico-flag.png"
     },
     {
       name: "New York",
-      flag: "new-york-flag.jpg"
+      flag: "new-york-flag.png"
     },
     {
       name: "North Carolina",
-      flag: "north-carolina-flag.jpg"
+      flag: "north-carolina-flag.png"
     },
     {
       name: "North Dakota",
-      flag: "north-dakota-flag.jpg"
+      flag: "north-dakota-flag.png"
     },
     {
       name: "Ohio",
-      flag: "ohio-flag.jpg"
+      flag: "ohio-flag.png"
     },
     {
       name: "Oklahoma",
-      flag: "oklahoma-flag.jpg"
+      flag: "oklahoma-flag.png"
     },
     {
       name: "Oregon",
-      flag: "oregon-flag.jpg"
+      flag: "oregon-flag.png"
     },
     {
       name: "Pennsylvania",
-      flag: "pennsylvania-flag.jpg"
+      flag: "pennsylvania-flag.png"
     },
     {
       name: "Rhode Island",
-      flag: "rhode-island-flag.jpg"
+      flag: "rhode-island-flag.png"
     },
     {
       name: "South Carolina",
-      flag: "south-carolina-flag.jpg"
+      flag: "south-carolina-flag.png"
     },
     {
       name: "South Dakota",
-      flag: "south-dakota-flag.jpg"
+      flag: "south-dakota-flag.png"
     },
     {
       name: "Tennessee",
-      flag: "tennessee-flag.jpg"
+      flag: "tennessee-flag.png"
     },
     {
       name: "Texas",
-      flag: "texas-flag.jpg"
+      flag: "texas-flag.png"
     },
     {
       name: "Utah",
-      flag: "utah-flag.jpg"
+      flag: "utah-flag.png"
     },
     {
       name: "Vermont",
-      flag: "vermont-flag.jpg"
+      flag: "vermont-flag.png"
     },
     {
       name: "Virginia",
-      flag: "virginia-flag.jpg"
+      flag: "virginia-flag.png"
     },
     {
       name: "Washington",
-      flag: "washington-flag.jpg"
+      flag: "washington-flag.png"
     },
     {
       name: "West Virginia",
-      flag: "west-virginia-flag.jpg"
+      flag: "west-virginia-flag.png"
     },
     {
       name: "Wisconsin",
-      flag: "wisconsin-flag.jpg"
+      flag: "wisconsin-flag.png"
     },
     {
       name: "Wyoming",
-      flag: "wyoming-flag.jpg"
+      flag: "wyoming-flag.png"
     }
   ];
 
