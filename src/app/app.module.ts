@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StatesMainComponent } from './states-main/states-main.component';
+import { StateDetailsComponent } from './state-details/state-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StatesMainComponent
+    StatesMainComponent,
+    StateDetailsComponent
   ],
   imports: [
     BrowserModule,
