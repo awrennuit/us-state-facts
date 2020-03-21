@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { State } from '../shared/state';
+import { StateService } from '../shared/state.service';
 
 @Component({
   selector: 'app-states-main',
@@ -6,6 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./states-main.component.css']
 })
 export class StatesMainComponent implements OnInit {
+
+  states$: Array<any>;
+
+  constructor(
+    public firebaseService: FirebaseService,
+    private router: Router
+  ) { }
+
+
+ ngOnInit() {
+   this.firebaseService.getUsers()
+    .subscribe(result => {
+      this.items = result;
+    })
+  }
 
   states = [
     {

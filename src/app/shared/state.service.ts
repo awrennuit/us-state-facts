@@ -6,17 +6,17 @@ import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angula
 })
 
 export class StateService {
-  statesRef: AngularFireList<any>;
+  statesRef: AngularFireList<any[]>;
   stateRef: AngularFireObject<any>;
 
   constructor(private db: AngularFireDatabase) {}
 
-  GetState(id: string){
+  getState(id: string){
     this.stateRef = this.db.object('us-states-9c6f4/' + id);
     return this.stateRef;
   }  
 
-  GetStateList(){
+  getStateList(){
     this.statesRef = this.db.list('us-states-9c6f4');
     return this.statesRef;
   }
