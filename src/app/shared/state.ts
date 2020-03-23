@@ -1,4 +1,4 @@
-export interface State {
+export interface iState {
   $key: string;
   abbreviation: string;
   capital: string;
