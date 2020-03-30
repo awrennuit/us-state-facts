@@ -4,6 +4,7 @@ export interface iState {
   capital: string;
   electoral_votes: number;
   flag: string;
+  name: string;
   national_parks: number;
   state_bird: string;
   state_flower: string;
