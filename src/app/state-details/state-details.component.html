@@ -1,1 +1,13 @@
-<p>state-details works!</p>
+<div class="main-page-container" *ngFor="let one of state">
+  <h1>{{ one.name }}</h1>
+  <h1>{{ one.abbreviation }}</h1>
+  <h1>{{ one.flag }}</h1>
+  <h1>{{ one.capital }}</h1>
+
+  <!-- {{ one | json }} -->
+</div>
+<div>
+  <p>hi</p>
+  <p>id: {{ route }}</p>
+  <p>state data: {{ state | json }}</p>
+</div>

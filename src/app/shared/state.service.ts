@@ -1,24 +1,25 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+// import { State } from './state';
+import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class StateService {
-  private state: AngularFireList<any>;
-  private stateList: AngularFireList<any>;
+  private stateRef: AngularFireList<any>;
+  private stateListRef: AngularFireList<any>;
 
   constructor(private db: AngularFireDatabase) {
-    this.state = this.db.list(`states/${name}`);
-    this.stateList = this.db.list('states');
   }
 
-  getState(){
-    return this.state;
+  getState(id: string){
+    this.stateRef = this.db.list(`states/${id}`);    
+    return this.stateRef;
   }
 
   getStateList(){
-    return this.stateList;
+    this.stateListRef = this.db.list('states');
+    return this.stateListRef;
   }
 }
