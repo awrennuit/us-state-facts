@@ -1,12 +1,12 @@
 <div class="main-page-container">
-  <h1>{{ state.name }}</h1>
-  <h1>{{ state.abbreviation }}</h1>
-  <img src="assets/images/{{state.flag}}" />
-  <h1>{{ state.capital }}</h1>
-</div>
-
-<div>
-  <p>hi</p>
-  <p>id: {{ route }}</p>
-  <p>state data: {{ state | json }}</p>
+  <div>
+    <img src="assets/images/{{state.flag}}" />
+    <h1 class="main-heading">{{ state.name }}</h1>
+  </div>
+  <div class="state-details-container">
+    <div class="state-details-text-container">
+      <p>Abbreviation: {{ state.abbreviation }}</p>
+      <p>Capital City: {{ state.capital }}</p>
+    </div>
+  </div>
 </div>

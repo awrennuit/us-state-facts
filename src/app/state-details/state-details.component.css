@@ -1,0 +1,9 @@
+.state-details-container {
+  text-align: center;
+}
+
+.state-details-text-container {
+  display: inline-block;
+  width: 600px;
+  text-align: left;
+}
