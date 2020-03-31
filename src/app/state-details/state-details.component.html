@@ -1,11 +1,10 @@
-<div class="main-page-container" *ngFor="let one of state">
-  <h1>{{ one.name }}</h1>
-  <h1>{{ one.abbreviation }}</h1>
-  <h1>{{ one.flag }}</h1>
-  <h1>{{ one.capital }}</h1>
-
-  <!-- {{ one | json }} -->
+<div class="main-page-container">
+  <h1>{{ state.name }}</h1>
+  <h1>{{ state.abbreviation }}</h1>
+  <img src="assets/images/{{state.flag}}" />
+  <h1>{{ state.capital }}</h1>
 </div>
+
 <div>
   <p>hi</p>
   <p>id: {{ route }}</p>

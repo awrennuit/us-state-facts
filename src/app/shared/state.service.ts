@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-// import { State } from './state';
-import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
+import { iState } from './state';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
