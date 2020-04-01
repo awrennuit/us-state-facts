@@ -1,5 +1,7 @@
-.flag-border {
+.state-details-flag {
   border: 1px solid black;
+  animation: fadein 1.3s;
+  -webkit-animation: fadein 1.3s;
 }
 
 .state-details-container {
@@ -10,4 +12,14 @@
   display: inline-block;
   width: 600px;
   text-align: left;
+}
+
+@keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
