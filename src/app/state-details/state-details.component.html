@@ -1,12 +1,19 @@
 <div class="main-page-container">
   <div>
     <img src="assets/images/{{state.flag}}" />
-    <h1 class="main-heading">{{ state.name }}</h1>
+    <h1 class="main-heading">{{ state.name }} | {{ state.abbreviation }}</h1>
+    <h3>Established {{ state.statehood }}</h3>
   </div>
   <div class="state-details-container">
     <div class="state-details-text-container">
-      <p>Abbreviation: {{ state.abbreviation }}</p>
       <p>Capital City: {{ state.capital }}</p>
+      <p>National Parks: {{ state['national-parks'] }}</p>
+      <p>Electoral Votes: {{ state['electoral-votes'] }}</p>
+      <p>State Bird: {{ state['state-bird'] }}</p>
+      <p>State Flower: {{ state['state-flower'] }}</p>
+      <p>State Gemstone: {{ state['state-gemstone'] }}</p>
+      <p>State Mammal: {{ state['state-mammal'] }}</p>
+      <p>State Tree: {{ state['state-tree'] }}</p>
     </div>
   </div>
 </div>
