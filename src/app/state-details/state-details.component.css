@@ -6,11 +6,23 @@
 
 .state-details-container {
   text-align: center;
+  display: inline-block;
+}
+
+.state-details-flag-container {
+  grid-area: flag;
+  padding-top: 40px;
+}
+
+.state-details-grid-container {
+  display: grid;
+  text-align: center;
+  grid-template: 'info flag';
+  width: 800px;
 }
 
 .state-details-text-container {
-  display: inline-block;
-  width: 600px;
+  grid-area: info;
   text-align: left;
 }
 
