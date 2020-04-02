@@ -1,12 +1,12 @@
 .state-details-flag {
   border: 1px solid black;
-  animation: fadein 1.3s;
-  -webkit-animation: fadein 1.3s;
 }
 
 .state-details-container {
   text-align: center;
   display: inline-block;
+  animation: fadein 1.3s;
+  -webkit-animation: fadein 1.3s;
 }
 
 .state-details-flag-container {
