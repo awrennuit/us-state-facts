@@ -16,6 +16,7 @@
   background-image: url(../../assets/images/paper.jpg);
   background-size: cover;
   border: 20px ridge brown;
+  border-radius: 4px;
   width: 900px;
   padding-bottom: 30px;
 }
