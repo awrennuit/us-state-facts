@@ -50,4 +50,24 @@ export class StateDetailsComponent implements OnInit {
     });
   }
 
+  public nextState(){
+    const urlParams = this.stateKeyList.indexOf(this.activatedRoute.snapshot.paramMap.get('id'));
+    if(this.stateKeyList[urlParams + 1]){
+      return this.stateKeyList[urlParams + 1];
+    }
+    else {
+      return this.stateKeyList[0];
+    }
+  }
+
+  public prevState(){
+    const urlParams = this.stateKeyList.indexOf(this.activatedRoute.snapshot.paramMap.get('id'));
+    if(this.stateKeyList[urlParams - 1]){
+      return this.stateKeyList[urlParams - 1];
+    }
+    else {
+      return this.stateKeyList[this.stateKeyList.length - 1];
+    }
+  }
+
 }

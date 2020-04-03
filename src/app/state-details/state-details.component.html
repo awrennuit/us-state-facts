@@ -1,7 +1,6 @@
 <div class="main-page-container">
   <div class="state-details-card-container">
     <div class="state-details-card">
-      {{ stateKeyList | json }}
       <h1 class="main-heading">{{ state.name }} | {{ state.abbreviation }}</h1>
       <h3>Established {{ state.statehood }}</h3>
       <div class="state-details-container">
@@ -46,6 +45,7 @@
         </div>
       </div>
       <div class="state-details-back-container">
+        <!-- <a [routerLink]="['/state-details/', prevState()]">hello there</a>  URL updates, but page does not render -->
         <a [routerLink]="['/home']" class="state-details-back">Return to List</a>
       </div>
     </div>
