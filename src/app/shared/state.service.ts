@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { iState } from './state';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +7,7 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 
 export class StateService {
   private stateRef: AngularFireList<any>;
+  private stateKeysRef: AngularFireObject<any>;
   private stateListRef: AngularFireList<any>;
 
   constructor(private db: AngularFireDatabase) {
@@ -16,6 +16,11 @@ export class StateService {
   getState(id: string){
     this.stateRef = this.db.list(`states/${id}`);    
     return this.stateRef;
+  }
+
+  getStateKeys(){
+    this.stateKeysRef = this.db.object('states');
+    return this.stateListRef;
   }
 
   getStateList(){

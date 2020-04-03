@@ -1,6 +1,7 @@
 <div class="main-page-container">
   <div class="state-details-card-container">
     <div class="state-details-card">
+      {{ stateKeyList | json }}
       <h1 class="main-heading">{{ state.name }} | {{ state.abbreviation }}</h1>
       <h3>Established {{ state.statehood }}</h3>
       <div class="state-details-container">

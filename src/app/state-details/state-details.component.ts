@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StateService } from '../shared/state.service';
 import { ActivatedRoute } from "@angular/router";
+import { iState } from '../shared/state';
 
 @Component({
   selector: 'app-state-details',
@@ -10,6 +11,7 @@ import { ActivatedRoute } from "@angular/router";
 
 export class StateDetailsComponent implements OnInit {
 
+  stateKeyList: any[];
   state: any;
   route: string;
 
@@ -20,6 +22,7 @@ export class StateDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.getState();
+    this.getStateKeyList();
   }
 
   getState(){
@@ -37,5 +40,14 @@ export class StateDetailsComponent implements OnInit {
       this.state = object;      
     });
   }
-  
+
+  getStateKeyList(){
+    this.stateService.getStateKeys().snapshotChanges().forEach(snapshot => {
+      this.stateKeyList = [];
+      snapshot.forEach(child => {
+        this.stateKeyList.push(child.key);
+      });
+    });
+  }
+
 }
