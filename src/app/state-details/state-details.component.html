@@ -1,50 +1,52 @@
 <div class="main-page-container">
-  <div>
-    <h1 class="main-heading">{{ state.name }} | {{ state.abbreviation }}</h1>
-    <h3>Established {{ state.statehood }}</h3>
-  </div>
-  <div class="state-details-container">
-    <div class="state-details-grid-container">
-      <div class="state-details-text-container">
-        <p>
-          <span class="state-details-key">Capital City:</span> 
-          <span> {{ state.capital }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">National Parks:</span> 
-          <span> {{ state['national-parks'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">Electoral Votes:</span> 
-          <span> {{ state['electoral-votes'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">State Bird:</span> 
-          <span> {{ state['state-bird'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">State Flower:</span> 
-          <span> {{ state['state-flower'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">State Gemstone:</span> 
-          <span> {{ state['state-gemstone'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">State Mammal:</span> 
-          <span> {{ state['state-mammal'] }}</span>
-        </p>
-        <p>
-          <span class="state-details-key">State Tree:</span> 
-          <span> {{ state['state-tree'] }}</span>
-        </p>
+  <div class="state-details-card-container">
+    <div class="state-details-card">
+      <h1 class="main-heading">{{ state.name }} | {{ state.abbreviation }}</h1>
+      <h3>Established {{ state.statehood }}</h3>
+      <div class="state-details-container">
+        <div class="state-details-grid-container">
+          <div class="state-details-text-container">
+            <p>
+              <span class="state-details-key">Capital City:</span> 
+              <span> {{ state.capital }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">National Parks:</span> 
+              <span> {{ state['national-parks'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">Electoral Votes:</span> 
+              <span> {{ state['electoral-votes'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">State Bird:</span> 
+              <span> {{ state['state-bird'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">State Flower:</span> 
+              <span> {{ state['state-flower'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">State Gemstone:</span> 
+              <span> {{ state['state-gemstone'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">State Mammal:</span> 
+              <span> {{ state['state-mammal'] }}</span>
+            </p>
+            <p>
+              <span class="state-details-key">State Tree:</span> 
+              <span> {{ state['state-tree'] }}</span>
+            </p>
+          </div>
+          <div class="state-details-flag-container">
+            <img class="state-details-flag" src="assets/images/{{state.flag}}" />
+          </div>
+        </div>
       </div>
-      <div class="state-details-flag-container">
-        <img class="state-details-flag" src="assets/images/{{state.flag}}" />
+      <div class="state-details-back-container">
+        <a [routerLink]="['/home']" class="state-details-back">Return to List</a>
       </div>
     </div>
-  </div>
-  <div class="state-details-back-container">
-    <a [routerLink]="['/home']" class="state-details-back">Return to List</a>
   </div>
 </div>

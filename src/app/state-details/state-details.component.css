@@ -10,6 +10,20 @@
   margin-top: 90px;
 }
 
+.state-details-card {
+  display: inline-block;
+  /* background-color: antiquewhite; */
+  background-image: url(../../assets/images/paper.jpg);
+  background-size: cover;
+  border: 20px ridge brown;
+  width: 900px;
+  padding-bottom: 30px;
+}
+
+.state-details-card-container {
+  text-align: center;
+}
+
 .state-details-flag {
   border: 1px solid black;
 }
