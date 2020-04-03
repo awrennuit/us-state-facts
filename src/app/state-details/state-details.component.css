@@ -1,3 +1,15 @@
+.state-details-back {
+  transition: 0.3s;
+}
+
+.state-details-back:hover {
+  font-size: 1.1em;
+}
+
+.state-details-back-container {
+  margin-top: 90px;
+}
+
 .state-details-flag {
   border: 1px solid black;
 }
