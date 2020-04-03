@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { StateService } from '../shared/state.service';
 import { ActivatedRoute } from "@angular/router";
-import { iState } from '../shared/state';
 
 @Component({
   selector: 'app-state-details',
@@ -16,8 +15,8 @@ export class StateDetailsComponent implements OnInit {
   route: string;
 
   constructor(
-    private stateService: StateService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private stateService: StateService
     ) {}
 
   ngOnInit() {
