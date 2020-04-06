@@ -68,5 +68,4 @@ export class StateDetailsComponent implements OnInit {
       return this.stateKeyList[this.stateKeyList.length - 1];
     }
   }
-
 }

@@ -7,12 +7,12 @@ import { iState } from '../shared/state';
   templateUrl: './states-main.component.html',
   styleUrls: ['./states-main.component.css']
 })
+
 export class StatesMainComponent implements OnInit {
 
   stateList: iState[];
 
-  constructor(private stateService: StateService) {
-  }
+  constructor(private stateService: StateService) {}
 
   ngOnInit() {
     this.getStates();
